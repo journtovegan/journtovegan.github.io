@@ -45,11 +45,13 @@ footer {
   color: white;
   padding: 20px 0;
 }
+
+/* Updated .cards class for vertical stacking and center alignment */
 .cards {
   display: flex;
-  justify-content: center;   /* Centers the cards horizontally */
-  gap: 40px;                 /* Adds space between cards */
-  flex-wrap: wrap;           /* Allows cards to wrap on smaller screens */
+  flex-direction: column;  /* Stacks the cards vertically */
+  align-items: center;     /* Centers the cards horizontally */
+  gap: 40px;               /* Adds space between the cards */
   margin-top: 30px;
 }
 
@@ -87,6 +89,7 @@ footer {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
+
 /* Separator Line */
 .card-separator {
   border: 0;
