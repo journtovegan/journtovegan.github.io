@@ -216,3 +216,47 @@ a:hover {
 .card a:hover {
   color: #7BA06C; /* lighter green on hover for subtle effect */
 }
+.gear-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin: 60px 20px;
+}
+
+.gear-item {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 250px;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gear-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.gear-item h3 {
+  color: #5A8A42; /* dark olive headings */
+  margin-bottom: 10px;
+}
+
+.gear-item button {
+  background: linear-gradient(135deg, #5A8A42, #7BA06C);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.gear-item button:hover {
+  background: linear-gradient(135deg, #7BA06C, #5A8A42);
+  transform: scale(1.05);
+}
