@@ -149,3 +149,11 @@ nav button:focus {
 nav button:active {
   transform: scale(0.98);  /* Slight shrink effect when clicked */
 }
+/* Optional: Adding a soft shadow for extra depth */
+nav button {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);  /* Soft shadow for depth */
+}
+
+nav button:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* Slightly stronger shadow on hover */
+}
