@@ -8,22 +8,22 @@ body {
 }
 
 header {
-  background: linear-gradient(135deg, #76c893, #4CAF50);
+  background: linear-gradient(135deg, #76c893, #4CAF50);  /* Same gradient */
   color: white;
   padding: 80px 20px;
   text-align: center;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  font-family: 'Pacifico', cursive;  /* Apply Pacifico to the header */
+  font-family: 'Pacifico', cursive;  /* Apply Pacifico font */
 }
 
 header h1 {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico', cursive;  /* Ensure Pacifico font for header text */
   font-size: 50px;
   margin: 0 0 20px 0;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Adds depth to text */
-  color: white;  /* Make text solid white for better contrast */
-  transition: transform 0.3s ease;  /* Add transition for hover */
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);  /* Adds depth to text */
+  color: white;  /* Solid white text */
+  transition: transform 0.3s ease;  /* Add transition for hover effect */
 }
 
 header h1:hover {
@@ -45,6 +45,7 @@ nav a:hover {
   background-color: rgba(255, 255, 255, 0.5);
   transform: scale(1.1); /* Optional: Add scaling effect to nav links */
 }
+
 section {
   padding: 50px 20px;
 }
@@ -142,6 +143,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 /* Bio Section Styling */
 section p {
   max-width: 800px;       /* Limits the width of the bio text */
