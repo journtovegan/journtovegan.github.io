@@ -1,17 +1,18 @@
-/* Global Styles */
+/* Base styles */
 body {
   font-family: 'Quicksand', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f5f5f5;  /* Light background */
   color: #333;
+  text-align: center;
 }
 
-/* Header Styles */
+/* Header */
 header {
-  background: linear-gradient(135deg, #76c893, #4CAF50);  /* Green gradient background */
+  background: linear-gradient(135deg, #6b8e23, #4CAF50);  /* Earthy green gradient */
   color: white;
-  padding: 80px 20px;
+  padding: 100px 20px;
   text-align: center;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -37,25 +38,12 @@ header h1:hover {
   transition: transform 0.3s ease;
 }
 
-/* Navigation Button Styles */
-nav a {
-  margin: 0 10px;
-  padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: background-color 0.3s, transform 0.3s;
+/* Navigation Buttons */
+nav {
+  margin-top: 20px;
 }
 
-nav a:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-  transform: scale(1.1); /* Optional: Add scaling effect to nav links */
-}
-
-/* Navigation Button Styles for "Why Vegan" Page */
-.why-vegan-header nav button {
+nav button {
   background: linear-gradient(135deg, #4CAF50, #76c893); /* Matching header gradient */
   color: white;
   font-family: 'Quicksand', sans-serif;
@@ -68,24 +56,20 @@ nav a:hover {
   margin: 10px;
 }
 
-.why-vegan-header nav button:hover {
+nav button:hover {
   transform: scale(1.05);  /* Slight grow effect */
   background: linear-gradient(135deg, #76c893, #4CAF50); /* Hover gradient */
 }
 
-.why-vegan-header nav button:focus {
+nav button:focus {
   outline: none;  /* Remove the focus outline */
 }
 
-.why-vegan-header nav button:active {
+nav button:active {
   transform: scale(0.98);  /* Slight shrink effect when clicked */
 }
 
-/* Section Styling */
-section {
-  padding: 50px 20px;
-}
-
+/* Intro Section */
 .intro {
   background-color: #f0f0f0;
   padding: 60px 20px;
@@ -106,7 +90,7 @@ section {
   margin: 0 auto;
 }
 
-/* Cards for "Why Vegan?" Page */
+/* Cards */
 .cards {
   display: flex;
   justify-content: space-around;
@@ -147,7 +131,7 @@ section {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Separator Line for Cards */
+/* Separator Line */
 .card-separator {
   border: 0;
   height: 1px;
@@ -173,93 +157,4 @@ nav button {
 
 nav button:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* Slightly stronger shadow on hover */
-}
-
-/* Specific Styles for 'Why Vegan?' Page Header */
-.why-vegan-header {
-  background: linear-gradient(135deg, #6b8e23, #4CAF50);  /* Earthy green gradient */
-  color: white;
-  padding: 100px 20px;
-  text-align: center;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  font-family: 'Bebas Neue', sans-serif;  /* Bold, stylish header font */
-}
-
-.why-vegan-header h1 {
-  font-size: 60px;
-  margin: 0;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
-}
-
-.why-vegan-header h1 .journey {
-  font-weight: bold;
-}
-
-.why-vegan-header h1 .vegan {
-  font-weight: normal;
-}
-
-.why-vegan-header h1:hover {
-  transform: scale(1.05);  /* Slight hover effect */
-  transition: transform 0.3s ease;
-}
-
-/* Bio Section Styling */
-section p {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  line-height: 1.6;
-  font-size: 18px;
-  text-align: left;
-  background-color: #f3f3f3;
-  border-radius: 10px;
-}
-
-/* Link icon styles (FontAwesome) */
-a i {
-  margin-right: 8px;
-  color: #4CAF50;
-}
-
-a {
-  text-decoration: none;
-  color: #4CAF50;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* For all pages: Add a hover effect to buttons */
-button {
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-button:hover {
-  background-color: #4CAF50;
-  transform: scale(1.05);
-}
-
-/* Media Query for Mobile Responsiveness */
-@media only screen and (max-width: 768px) {
-  header h1 {
-    font-size: 40px;
-  }
-
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 80%;
-    max-width: 500px;
-  }
-
-  .intro p {
-    font-size: 16px;
-  }
 }
