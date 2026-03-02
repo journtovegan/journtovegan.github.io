@@ -205,3 +205,14 @@ a {
 a:hover {
   color: #7BA06C; /* darker green on hover */
 }
+.intro a,
+.card a {
+  color: #556B2F; /* Dark olive green for better contrast */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.intro a:hover,
+.card a:hover {
+  color: #7BA06C; /* lighter green on hover for subtle effect */
+}
