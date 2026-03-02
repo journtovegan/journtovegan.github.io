@@ -20,13 +20,15 @@ header {
   text-align: center;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  font-family: 'Bebas Neue', sans-serif;  /* Bold, stylish header font */
+  font-family: 'Bebas Neue', sans-serif;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* subtle depth */
 }
 
 header h1 {
   font-size: 60px;
   margin: 0;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  transition: color 0.3s ease;
 }
 
 header h1 .journey {
@@ -38,8 +40,9 @@ header h1 .vegan {
 }
 
 header h1:hover {
+  color: #A3C48C;  /* subtle highlight on hover */
   transform: scale(1.05);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 /* =========================
@@ -50,7 +53,7 @@ nav {
 }
 
 nav button {
-  background: linear-gradient(135deg, #5A8A42, #7BA06C); /* Matching fresh gradient */
+  background: linear-gradient(135deg, #5A8A42, #7BA06C);
   color: white;
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
@@ -58,7 +61,7 @@ nav button {
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  transition: transform 0.3s ease, background 0.3s ease;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
   margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -66,7 +69,7 @@ nav button {
 nav button:hover {
   transform: scale(1.05);
   background: linear-gradient(135deg, #7BA06C, #5A8A42);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* slightly stronger shadow */
 }
 
 nav button:focus {
@@ -89,7 +92,7 @@ nav button:active {
   font-family: 'Raleway', sans-serif;
   font-size: 35px;
   margin-bottom: 20px;
-  color: #5A8A42; /* Fresh earthy green for headings */
+  color: #5A8A42;
 }
 
 .intro p {
@@ -117,7 +120,7 @@ nav button:active {
   padding: 20px;
   width: 90%;
   max-width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12); /* slightly fancier shadow */
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -126,11 +129,16 @@ nav button:active {
   height: 200px;
   object-fit: cover;
   border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.03); /* subtle image pop on hover */
 }
 
 .card h3 {
   margin-top: 0;
-  color: #5A8A42; /* Fresh earthy green headings */
+  color: #5A8A42;
 }
 
 .card p {
@@ -140,14 +148,14 @@ nav button:active {
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.18);
 }
 
 /* Separator Line */
 .card-separator {
   border: 0;
   height: 1px;
-  background-color: #CCC;  /* Softer separator line */
+  background-color: #CCC;
   margin: 15px 0;
 }
 
@@ -161,7 +169,7 @@ nav button:active {
   text-align: left;
   background-color: #FFFFFF;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
 
 .bio p {
@@ -174,11 +182,26 @@ nav button:active {
    Footer
 ========================= */
 footer {
-  background-color: #4F6A3F;  /* Darker earthy green for contrast */
+  background: linear-gradient(135deg, #4F6A3F, #5A8A42); /* darker but matches header */
   color: white;
   padding: 40px 20px;
+  box-shadow: inset 0 4px 10px rgba(0,0,0,0.1); /* subtle inner shadow for depth */
 }
 
 footer p {
   font-size: 16px;
+}
+
+/* =========================
+   Optional Dynamic Accent Colors
+========================= */
+/* Make links pop subtly */
+a {
+  color: #A3C48C; /* lighter green accent */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #7BA06C; /* darker green on hover */
 }
