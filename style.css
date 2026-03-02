@@ -38,92 +38,11 @@ header h1:hover {
   transition: transform 0.3s ease;
 }
 
-/* Intro Section */
-.intro {
-  background-color: #f0f0f0;
-  padding: 60px 20px;
+/* Navigation Buttons */
+nav {
+  margin-top: 20px;
 }
 
-.intro h2 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 35px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.intro p {
-  font-size: 18px;
-  color: #555;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Bio Section */
-.bio {
-  background-color: #fff8e1;  /* Soft yellowish background */
-  padding: 60px 20px;
-}
-
-.bio h2 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 35px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.bio p {
-  font-size: 18px;
-  color: #555;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-  font-style: italic;  /* Slightly artistic feel */
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-  color: white;
-  padding: 40px 20px;
-  font-family: 'Quicksand', sans-serif;
-}
-
-footer p {
-  font-size: 16px;
-}
-
-/* Styling for Links in Footer */
-footer a {
-  color: #FF6347;  /* Accent color for links */
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Animations */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-body {
-  animation: fadeIn 1s ease-in;
-}
-
-/* Add subtle background textures/patterns */
-body {
-  background-image: url('https://www.transparenttextures.com/patterns/geometry.png');  /* Example texture */
-  background-size: 120px 120px;  /* Subtle pattern */
-  background-repeat: repeat;
-}
-/* Style for buttons in the navigation */
 nav button {
   background: linear-gradient(135deg, #4CAF50, #76c893); /* Matching header gradient */
   color: white;
@@ -149,6 +68,88 @@ nav button:focus {
 nav button:active {
   transform: scale(0.98);  /* Slight shrink effect when clicked */
 }
+
+/* Intro Section */
+.intro {
+  background-color: #f0f0f0;
+  padding: 60px 20px;
+}
+
+.intro h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.intro p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 90%;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #4CAF50;
+}
+
+.card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Separator Line */
+.card-separator {
+  border: 0;
+  height: 1px;
+  background-color: #ddd;
+  margin: 15px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
 /* Optional: Adding a soft shadow for extra depth */
 nav button {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);  /* Soft shadow for depth */
