@@ -7,42 +7,55 @@ body {
   color: #333;
 }
 
-/* Specific Styles for 'Why Vegan?' Page */
-.why-vegan-page header {
-  background: linear-gradient(135deg, #6b8e23, #4CAF50);  /* Earthy green gradient */
+/* Header Styles */
+header {
+  background: linear-gradient(135deg, #76c893, #4CAF50);  /* Green gradient background */
   color: white;
-  padding: 100px 20px;
+  padding: 80px 20px;
   text-align: center;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   font-family: 'Bebas Neue', sans-serif;  /* Bold, stylish header font */
 }
 
-.why-vegan-page header h1 {
+header h1 {
   font-size: 60px;
   margin: 0;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
-.why-vegan-page header h1 .journey {
+header h1 .journey {
   font-weight: bold;
 }
 
-.why-vegan-page header h1 .vegan {
+header h1 .vegan {
   font-weight: normal;
 }
 
-.why-vegan-page header h1:hover {
+header h1:hover {
   transform: scale(1.05);  /* Slight hover effect */
   transition: transform 0.3s ease;
 }
 
-/* Navigation Buttons Specific to Why Vegan Page */
-.why-vegan-page nav {
-  margin-top: 20px;
+/* Navigation Button Styles */
+nav a {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-.why-vegan-page nav button {
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.1); /* Optional: Add scaling effect to nav links */
+}
+
+/* Navigation Button Styles for "Why Vegan" Page */
+.why-vegan-header nav button {
   background: linear-gradient(135deg, #4CAF50, #76c893); /* Matching header gradient */
   color: white;
   font-family: 'Quicksand', sans-serif;
@@ -55,33 +68,37 @@ body {
   margin: 10px;
 }
 
-.why-vegan-page nav button:hover {
+.why-vegan-header nav button:hover {
   transform: scale(1.05);  /* Slight grow effect */
   background: linear-gradient(135deg, #76c893, #4CAF50); /* Hover gradient */
 }
 
-.why-vegan-page nav button:focus {
+.why-vegan-header nav button:focus {
   outline: none;  /* Remove the focus outline */
 }
 
-.why-vegan-page nav button:active {
+.why-vegan-header nav button:active {
   transform: scale(0.98);  /* Slight shrink effect when clicked */
 }
 
-/* Intro Section for Why Vegan */
-.why-vegan-page .intro {
+/* Section Styling */
+section {
+  padding: 50px 20px;
+}
+
+.intro {
   background-color: #f0f0f0;
   padding: 60px 20px;
 }
 
-.why-vegan-page .intro h2 {
+.intro h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 35px;
   margin-bottom: 20px;
   color: #333;
 }
 
-.why-vegan-page .intro p {
+.intro p {
   font-size: 18px;
   color: #555;
   line-height: 1.6;
@@ -89,8 +106,8 @@ body {
   margin: 0 auto;
 }
 
-/* Cards for Why Vegan */
-.why-vegan-page .cards {
+/* Cards for "Why Vegan?" Page */
+.cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -98,7 +115,7 @@ body {
   margin-top: 30px;
 }
 
-.why-vegan-page .card {
+.card {
   background-color: white;
   border-radius: 15px;
   padding: 20px;
@@ -108,30 +125,30 @@ body {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.why-vegan-page .card img {
+.card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 15px;
 }
 
-.why-vegan-page .card h3 {
+.card h3 {
   margin-top: 0;
   color: #4CAF50;
 }
 
-.why-vegan-page .card p {
+.card p {
   font-size: 16px;
   color: #555;
 }
 
-.why-vegan-page .card:hover {
+.card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Separator Line */
-.why-vegan-page .card-separator {
+/* Separator Line for Cards */
+.card-separator {
   border: 0;
   height: 1px;
   background-color: #ddd;
@@ -150,10 +167,99 @@ footer p {
 }
 
 /* Optional: Adding a soft shadow for extra depth */
-.why-vegan-page nav button {
+nav button {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);  /* Soft shadow for depth */
 }
 
-.why-vegan-page nav button:hover {
+nav button:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* Slightly stronger shadow on hover */
+}
+
+/* Specific Styles for 'Why Vegan?' Page Header */
+.why-vegan-header {
+  background: linear-gradient(135deg, #6b8e23, #4CAF50);  /* Earthy green gradient */
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  font-family: 'Bebas Neue', sans-serif;  /* Bold, stylish header font */
+}
+
+.why-vegan-header h1 {
+  font-size: 60px;
+  margin: 0;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.why-vegan-header h1 .journey {
+  font-weight: bold;
+}
+
+.why-vegan-header h1 .vegan {
+  font-weight: normal;
+}
+
+.why-vegan-header h1:hover {
+  transform: scale(1.05);  /* Slight hover effect */
+  transition: transform 0.3s ease;
+}
+
+/* Bio Section Styling */
+section p {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  line-height: 1.6;
+  font-size: 18px;
+  text-align: left;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+}
+
+/* Link icon styles (FontAwesome) */
+a i {
+  margin-right: 8px;
+  color: #4CAF50;
+}
+
+a {
+  text-decoration: none;
+  color: #4CAF50;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* For all pages: Add a hover effect to buttons */
+button {
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #4CAF50;
+  transform: scale(1.05);
+}
+
+/* Media Query for Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+  header h1 {
+    font-size: 40px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    max-width: 500px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
 }
