@@ -47,9 +47,9 @@ footer {
 }
 .cards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
+  justify-content: center;   /* Centers the cards horizontally */
+  gap: 40px;                 /* Adds space between cards */
+  flex-wrap: wrap;           /* Allows cards to wrap on smaller screens */
   margin-top: 30px;
 }
 
