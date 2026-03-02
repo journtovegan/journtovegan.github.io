@@ -158,3 +158,18 @@ nav button {
 nav button:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* Slightly stronger shadow on hover */
 }
+.bio {
+  max-width: 800px;  /* Limit width to prevent horizontal stretching */
+  margin: 40px auto;  /* Center it horizontally and add space above and below */
+  padding: 20px;  /* Add padding around the text */
+  text-align: left;  /* Ensure the text is left-aligned */
+  background-color: #ffffff;  /* Optional: Add background to make the section stand out */
+  border-radius: 10px;  /* Optional: Rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: Add subtle shadow for depth */
+}
+
+.bio p {
+  font-size: 18px;  /* Ensure text is easy to read */
+  color: #555;
+  line-height: 1.6;  /* Improve text readability */
+}
