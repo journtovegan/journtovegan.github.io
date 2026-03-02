@@ -1,67 +1,184 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Why Vegan? | Journey to Vegan</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@400;500&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <h1><span class="journey">Journey</span> <span class="vegan">to Vegan</span></h1>
-    <nav>
-      <button onclick="window.location.href='index.html'">Home</button>
-      <button onclick="window.location.href='why-vegan.html'">Why Vegan?</button>
-      <button onclick="window.location.href='recipes.html'">Sustainable Swaps</button>
-      <button onclick="window.location.href='gear.html'">Gear Guide</button>
-      <button onclick="window.location.href='contact.html'">Contact</button>
-    </nav>
-  </header>
+/* =========================
+   Base Styles
+========================= */
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5EB;  /* Light warm off-white */
+  color: #333333;  /* Main text color */
+  text-align: center;
+}
 
-  <section class="intro">
-    <h2>Why Choose Vegan?</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="pears.jpg" alt="Colorful Fruits and Vegetables">
-        <h3>For Your Health</h3>
-        <p>Eating plant-based foods improves your energy, heart, and overall wellness.</p>
-        <hr class="card-separator">
-        <p><strong>Recent Research:</strong></p>
-        <p>
-          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9899747/pdf/394_2022_Article_2942.pdf" target="_blank">
-             <i class="fas fa-link"></i> Heart Health
-         </a>
-       </p>
+/* =========================
+   Header
+========================= */
+header {
+  background: linear-gradient(135deg, #5A8A42, #7BA06C);  /* Fresh earthy green gradient */
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  font-family: 'Bebas Neue', sans-serif;  /* Bold, stylish header font */
+}
 
-       <p>
-         <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0300711" target="_blank">
-           <i class="fas fa-link"></i> Cancer and Mortality
-         </a>
-       </p>
-      </div>
+header h1 {
+  font-size: 60px;
+  margin: 0;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
 
-      <div class="card">
-        <img src="leafs.jpg" alt="Leaf">
-        <h3>For The Planet</h3>
-        <p>Choosing vegan reduces your environmental impact, saving water, forests, and the climate.</p>
-        <hr class="card-separator">
-        <p><strong>Recent Research:</strong> <a href="https://www.mdpi.com/2071-1050/11/15/4110" target="_blank"><i class="fas fa-link"></i> Greenhouse Gases</a></p>
-      </div>
+header h1 .journey {
+  font-weight: bold;
+}
 
-      <div class="card">
-        <img src="cow.jpg" alt="Cow">
-        <h3>For Our Friends</h3>
-        <p>Choosing plant-based foods helps reduce animal suffering and protects innocent lives.</p>
-        <hr class="card-separator">
-        <p><strong>Recent Research:</strong> <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8146968/pdf/animals-11-01225.pdf" target="_blank"><i class="fas fa-link"></i> Animal Harm</a></p>
-      </div>
-    </div>
-  </section>
+header h1 .vegan {
+  font-weight: normal;
+}
 
-  <footer>
-    <p>Credentials: OTR/L, PhDC&nbsp;&nbsp;|&nbsp;&nbsp;Insta: @Journeyto.Vegan&nbsp;&nbsp;|&nbsp;&nbsp;Email: journto.vegan@gmail.com</p>
-  </footer>
-</body>
-</html>
+header h1:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* =========================
+   Navigation Buttons
+========================= */
+nav {
+  margin-top: 20px;
+}
+
+nav button {
+  background: linear-gradient(135deg, #5A8A42, #7BA06C); /* Matching fresh gradient */
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #7BA06C, #5A8A42);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+nav button:focus {
+  outline: none;
+}
+
+nav button:active {
+  transform: scale(0.98);
+}
+
+/* =========================
+   Intro Section
+========================= */
+.intro {
+  background-color: #F5F5EB;
+  padding: 60px 20px;
+}
+
+.intro h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #5A8A42; /* Fresh earthy green for headings */
+}
+
+.intro p {
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* =========================
+   Cards
+========================= */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 20px;
+  width: 90%;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #5A8A42; /* Fresh earthy green headings */
+}
+
+.card p {
+  font-size: 16px;
+  color: #555555;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Separator Line */
+.card-separator {
+  border: 0;
+  height: 1px;
+  background-color: #CCC;  /* Softer separator line */
+  margin: 15px 0;
+}
+
+/* =========================
+   Bio Section
+========================= */
+.bio {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: left;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bio p {
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.6;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+  background-color: #4F6A3F;  /* Darker earthy green for contrast */
+  color: white;
+  padding: 40px 20px;
+}
+
+footer p {
+  font-size: 16px;
+}
