@@ -123,3 +123,29 @@ body {
   background-size: 120px 120px;  /* Subtle pattern */
   background-repeat: repeat;
 }
+/* Style for buttons in the navigation */
+nav button {
+  background: linear-gradient(135deg, #4CAF50, #76c893); /* Matching header gradient */
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 25px;  /* Rounded corners for a clean look */
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  margin: 10px;
+}
+
+nav button:hover {
+  transform: scale(1.05);  /* Slight grow effect */
+  background: linear-gradient(135deg, #76c893, #4CAF50); /* Hover gradient */
+}
+
+nav button:focus {
+  outline: none;  /* Remove the focus outline */
+}
+
+nav button:active {
+  transform: scale(0.98);  /* Slight shrink effect when clicked */
+}
