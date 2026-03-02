@@ -106,13 +106,17 @@ footer {
 
 /* Ensures the link and icon are on the same line */
 .card a {
-  display: inline-flex; /* Ensures both icon and text are on the same line */
-  align-items: center;  /* Vertically aligns the icon and text */
-  font-size: 16px;      /* Optional: Adjust font size for consistency */
+  display: inline-flex;   /* Makes the link behave like a flex container */
+  align-items: center;    /* Vertically centers the icon and text */
+  font-size: 16px;        /* Optional: Adjust font size for consistency */
 }
 
 .card a i {
-  margin-right: 8px;    /* Adds spacing between the icon and text */
+  margin-right: 8px;      /* Adds space between the icon and the text */
+}
+
+.card p {
+  margin: 0;              /* Removes any extra margins that may break the line */
 }
 
 /* Link icon styles (FontAwesome) */
