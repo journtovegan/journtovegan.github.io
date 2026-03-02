@@ -298,3 +298,44 @@ a:hover {
     max-width: 100%;
   }
 }
+/* =========================
+   Contact Form
+========================= */
+.contact-form {
+  max-width: 600px;
+  margin: 40px auto 80px auto;
+  padding: 30px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.contact-form label {
+  font-weight: 500;
+  color: #5A8A42;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #CCC;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.contact-form button {
+  background: linear-gradient(135deg, #5A8A42, #7BA06C);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+}
