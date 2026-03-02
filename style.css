@@ -216,37 +216,58 @@ a:hover {
 .card a:hover {
   color: #7BA06C; /* lighter green on hover for subtle effect */
 }
-.gear-grid {
+
+ /* =========================
+   Vertical Gear Guide Styles
+========================= */
+.gear-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+  flex-direction: column;
+  gap: 60px;
   margin: 60px 20px;
 }
 
-.gear-item {
+.gear-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
   background-color: #FFFFFF;
   border-radius: 15px;
   padding: 20px;
-  max-width: 250px;
-  text-align: center;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.gear-item img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
+.gear-row:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.gear-row img {
+  width: 250px;
+  border-radius: 15px;
   object-fit: cover;
 }
 
-.gear-item h3 {
-  color: #5A8A42; /* dark olive headings */
-  margin-bottom: 10px;
+.gear-info {
+  max-width: 600px;
+  text-align: left;
 }
 
-.gear-item button {
+.gear-info h3 {
+  color: #5A8A42; /* dark olive headings */
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+
+.gear-info p {
+  color: #555555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.gear-info button {
   background: linear-gradient(135deg, #5A8A42, #7BA06C);
   color: white;
   padding: 10px 20px;
@@ -256,7 +277,24 @@ a:hover {
   transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.gear-item button:hover {
+.gear-info button:hover {
   background: linear-gradient(135deg, #7BA06C, #5A8A42);
   transform: scale(1.05);
+}
+
+/* Responsive for smaller screens */
+@media(max-width: 768px) {
+  .gear-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .gear-row img {
+    width: 80%;
+  }
+
+  .gear-info {
+    max-width: 100%;
+  }
 }
