@@ -14,7 +14,7 @@ body {
    Header
 ========================= */
 header {
-  background: linear-gradient(135deg, #556B2F, #8F9779);  /* Earthy green gradient */
+  background: linear-gradient(135deg, #5A8A42, #7BA06C);  /* Fresh earthy green gradient */
   color: white;
   padding: 100px 20px;
   text-align: center;
@@ -50,7 +50,7 @@ nav {
 }
 
 nav button {
-  background: linear-gradient(135deg, #556B2F, #8F9779); /* Earthy gradient */
+  background: linear-gradient(135deg, #5A8A42, #7BA06C); /* Matching fresh gradient */
   color: white;
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
@@ -65,7 +65,7 @@ nav button {
 
 nav button:hover {
   transform: scale(1.05);
-  background: linear-gradient(135deg, #8F9779, #556B2F);
+  background: linear-gradient(135deg, #7BA06C, #5A8A42);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -89,7 +89,7 @@ nav button:active {
   font-family: 'Raleway', sans-serif;
   font-size: 35px;
   margin-bottom: 20px;
-  color: #556B2F; /* Earthy green for headings */
+  color: #5A8A42; /* Fresh earthy green for headings */
 }
 
 .intro p {
@@ -130,7 +130,7 @@ nav button:active {
 
 .card h3 {
   margin-top: 0;
-  color: #556B2F; /* Earthy green headings */
+  color: #5A8A42; /* Fresh earthy green headings */
 }
 
 .card p {
@@ -174,7 +174,7 @@ nav button:active {
    Footer
 ========================= */
 footer {
-  background-color: #2F3E2F;  /* Dark earthy green */
+  background-color: #4F6A3F;  /* Darker earthy green for contrast */
   color: white;
   padding: 40px 20px;
 }
