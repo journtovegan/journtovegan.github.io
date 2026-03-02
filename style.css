@@ -1,16 +1,20 @@
-/* Base styles */
+/* =========================
+   Base Styles
+========================= */
 body {
   font-family: 'Quicksand', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;  /* Light background */
-  color: #333;
+  background-color: #F5F5EB;  /* Light warm off-white */
+  color: #333333;  /* Main text color */
   text-align: center;
 }
 
-/* Header */
+/* =========================
+   Header
+========================= */
 header {
-  background: linear-gradient(135deg, #6b8e23, #4CAF50);  /* Earthy green gradient */
+  background: linear-gradient(135deg, #556B2F, #8F9779);  /* Earthy green gradient */
   color: white;
   padding: 100px 20px;
   text-align: center;
@@ -34,44 +38,50 @@ header h1 .vegan {
 }
 
 header h1:hover {
-  transform: scale(1.05);  /* Slight hover effect */
+  transform: scale(1.05);
   transition: transform 0.3s ease;
 }
 
-/* Navigation Buttons */
+/* =========================
+   Navigation Buttons
+========================= */
 nav {
   margin-top: 20px;
 }
 
 nav button {
-  background: linear-gradient(135deg, #4CAF50, #76c893); /* Matching header gradient */
+  background: linear-gradient(135deg, #556B2F, #8F9779); /* Earthy gradient */
   color: white;
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
   padding: 15px 25px;
   border: none;
-  border-radius: 25px;  /* Rounded corners for a clean look */
+  border-radius: 25px;
   cursor: pointer;
   transition: transform 0.3s ease, background 0.3s ease;
   margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 nav button:hover {
-  transform: scale(1.05);  /* Slight grow effect */
-  background: linear-gradient(135deg, #76c893, #4CAF50); /* Hover gradient */
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #8F9779, #556B2F);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 nav button:focus {
-  outline: none;  /* Remove the focus outline */
+  outline: none;
 }
 
 nav button:active {
-  transform: scale(0.98);  /* Slight shrink effect when clicked */
+  transform: scale(0.98);
 }
 
-/* Intro Section */
+/* =========================
+   Intro Section
+========================= */
 .intro {
-  background-color: #f0f0f0;
+  background-color: #F5F5EB;
   padding: 60px 20px;
 }
 
@@ -79,18 +89,20 @@ nav button:active {
   font-family: 'Raleway', sans-serif;
   font-size: 35px;
   margin-bottom: 20px;
-  color: #333;
+  color: #556B2F; /* Earthy green for headings */
 }
 
 .intro p {
   font-size: 18px;
-  color: #555;
+  color: #555555;
   line-height: 1.6;
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* Cards */
+/* =========================
+   Cards
+========================= */
 .cards {
   display: flex;
   justify-content: space-around;
@@ -100,7 +112,7 @@ nav button:active {
 }
 
 .card {
-  background-color: white;
+  background-color: #FFFFFF;
   border-radius: 15px;
   padding: 20px;
   width: 90%;
@@ -118,12 +130,12 @@ nav button:active {
 
 .card h3 {
   margin-top: 0;
-  color: #4CAF50;
+  color: #556B2F; /* Earthy green headings */
 }
 
 .card p {
   font-size: 16px;
-  color: #555;
+  color: #555555;
 }
 
 .card:hover {
@@ -135,41 +147,38 @@ nav button:active {
 .card-separator {
   border: 0;
   height: 1px;
-  background-color: #ddd;
+  background-color: #CCC;  /* Softer separator line */
   margin: 15px 0;
 }
 
-/* Footer */
+/* =========================
+   Bio Section
+========================= */
+.bio {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: left;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bio p {
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.6;
+}
+
+/* =========================
+   Footer
+========================= */
 footer {
-  background-color: #333;
+  background-color: #2F3E2F;  /* Dark earthy green */
   color: white;
   padding: 40px 20px;
 }
 
 footer p {
   font-size: 16px;
-}
-
-/* Optional: Adding a soft shadow for extra depth */
-nav button {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);  /* Soft shadow for depth */
-}
-
-nav button:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* Slightly stronger shadow on hover */
-}
-.bio {
-  max-width: 800px;  /* Limit width to prevent horizontal stretching */
-  margin: 40px auto;  /* Center it horizontally and add space above and below */
-  padding: 20px;  /* Add padding around the text */
-  text-align: left;  /* Ensure the text is left-aligned */
-  background-color: #ffffff;  /* Optional: Add background to make the section stand out */
-  border-radius: 10px;  /* Optional: Rounded corners for a softer look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: Add subtle shadow for depth */
-}
-
-.bio p {
-  font-size: 18px;  /* Ensure text is easy to read */
-  color: #555;
-  line-height: 1.6;  /* Improve text readability */
 }
