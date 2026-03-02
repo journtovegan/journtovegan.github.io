@@ -18,12 +18,11 @@ header {
 }
 
 header h1 {
+  font-family: 'Pacifico', cursive;
   font-size: 50px;
   margin: 0 0 20px 0;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Depth effect */
-  background: linear-gradient(135deg, #76c893, #4CAF50);
-  -webkit-background-clip: text;
-  color: transparent;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Adds depth to text */
+  color: white;  /* Make text solid white for better contrast */
   transition: transform 0.3s ease;  /* Add transition for hover */
 }
 
