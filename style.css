@@ -1,165 +1,125 @@
+/* Base styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  background-color: #f5f5f5;  /* Light background */
   color: #333;
   text-align: center;
 }
 
+/* Header */
 header {
-  background: linear-gradient(135deg, #76c893, #4CAF50);  /* Same gradient */
+  background: linear-gradient(135deg, #6b8e23, #4CAF50);  /* Earthy green gradient */
   color: white;
-  padding: 80px 20px;
+  padding: 100px 20px;
   text-align: center;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  font-family: 'Bebas Neue', sans-serif;  /* Apply Bebas Neue font */
+  font-family: 'Bebas Neue', sans-serif;  /* Bold, stylish header font */
 }
 
 header h1 {
-  font-family: 'Bebas Neue', sans-serif;  /* Bebas Neue applied */
-  font-size: 50px;
-  margin: 0 0 20px 0;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);  /* Adds depth to text */
-  color: white;  /* Solid white text */
-  transition: transform 0.3s ease;  /* Add transition for hover effect */
+  font-size: 60px;
+  margin: 0;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 header h1 .journey {
-  font-weight: bold;  /* Make "Journey" bold */
+  font-weight: bold;
 }
 
 header h1 .vegan {
-  font-weight: normal;  /* Keep "Vegan" in normal weight */
+  font-weight: normal;
 }
 
 header h1:hover {
-  transform: scale(1.1);  /* Slight scale effect on hover */
+  transform: scale(1.05);  /* Slight hover effect */
+  transition: transform 0.3s ease;
 }
 
-nav a {
-  margin: 0 10px;
-  padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: background-color 0.3s, transform 0.3s;
+/* Intro Section */
+.intro {
+  background-color: #f0f0f0;
+  padding: 60px 20px;
 }
 
-nav a:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-  transform: scale(1.1); /* Optional: Add scaling effect to nav links */
+.intro h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-section {
-  padding: 50px 20px;
+.intro p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
+/* Bio Section */
+.bio {
+  background-color: #fff8e1;  /* Soft yellowish background */
+  padding: 60px 20px;
+}
+
+.bio h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.bio p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  font-style: italic;  /* Slightly artistic feel */
+}
+
+/* Footer */
 footer {
   background-color: #333;
   color: white;
-  padding: 20px 0;
+  padding: 40px 20px;
+  font-family: 'Quicksand', sans-serif;
 }
 
-/* Updated .cards class for vertical stacking and center alignment */
-.cards {
-  display: flex;
-  flex-direction: column;  /* Stacks the cards vertically */
-  align-items: center;     /* Centers the cards horizontally */
-  gap: 40px;               /* Adds space between the cards */
-  margin-top: 30px;
-}
-
-.card {
-  background-color: white;
-  border-radius: 15px;
-  padding: 20px;
-  width: 90%;
-  max-width: 600px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 15px;
-}
-
-.card h3 {
-  margin-top: 0;
-  color: #4CAF50;
-}
-
-.card p {
+footer p {
   font-size: 16px;
-  color: #555;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-/* Separator Line */
-.card-separator {
-  border: 0;
-  height: 1px;
-  background-color: #ddd;
-  margin: 15px 0; /* Adds spacing around the line */
-}
-
-/* Recent Research Styling */
-.card p {
-  font-size: 16px;
-  color: #555;
-}
-
-/* Ensures the link and icon are on the same line */
-.card a {
-  display: inline-flex;   /* Make the link an inline flex container */
-  align-items: center;    /* Vertically center the icon and text */
-  font-size: 16px;        /* Optional: Adjust font size for consistency */
-}
-
-.card a i {
-  margin-right: 8px;      /* Adds space between the icon and the text */
-}
-
-.card p {
-  margin: 0;              /* Removes any extra margins that might break the line */
-}
-
-/* Link icon styles (FontAwesome) */
-a i {
-  margin-right: 8px;
-  color: #4CAF50;
-}
-
-a {
+/* Styling for Links in Footer */
+footer a {
+  color: #FF6347;  /* Accent color for links */
   text-decoration: none;
-  color: #4CAF50;
 }
 
-a:hover {
+footer a:hover {
   text-decoration: underline;
 }
 
-/* Bio Section Styling */
-section p {
-  max-width: 800px;       /* Limits the width of the bio text */
-  margin: 20px auto;      /* Centers the bio text and adds margin around */
-  padding: 20px;          /* Adds some padding for better readability */
-  line-height: 1.6;       /* Increases line height for better spacing */
-  font-size: 18px;        /* Adjust font size for readability */
-  text-align: left;       /* Aligns the text to the left within the block */
-  background-color: #f3f3f3; /* Optional: Adds a light background color */
-  border-radius: 10px;    /* Optional: Adds rounded corners to the bio block */
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: fadeIn 1s ease-in;
+}
+
+/* Add subtle background textures/patterns */
+body {
+  background-image: url('https://www.transparenttextures.com/patterns/geometry.png');  /* Example texture */
+  background-size: 120px 120px;  /* Subtle pattern */
+  background-repeat: repeat;
 }
