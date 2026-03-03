@@ -14,14 +14,21 @@ body {
    Header
 ========================= */
 header {
-  background: linear-gradient(135deg, #5A8A42, #7BA06C);  /* Fresh earthy green gradient */
+header {
+  background:
+    linear-gradient(rgba(90,138,66,0.75), rgba(123,160,108,0.75)),
+    url('back.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
-  padding: 100px 20px;
+  padding: 120px 20px;
   text-align: center;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   font-family: 'Bebas Neue', sans-serif;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* subtle depth */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
 }
 
 header h1 {
