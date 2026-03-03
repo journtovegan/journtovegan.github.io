@@ -14,21 +14,22 @@ body {
    Header
 ========================= */
 header {
-header {
   background:
     linear-gradient(rgba(90,138,66,0.75), rgba(123,160,108,0.75)),
-    url('back.jpg');
-  background-size: cover;
-  background-position: center;
+    url('back.jpg');             /* your uploaded header image */
+  background-size: cover;        /* fills the header */
+  background-position: center;   /* centers image */
   background-repeat: no-repeat;
-  color: white;
-  padding: 120px 20px;
-  text-align: center;
+  
+  color: white;                  /* text stays white */
+  text-align: center;            /* keep centered text */
+  padding: 120px 20px;           /* header height */
+  
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  font-family: 'Bebas Neue', sans-serif;
+  
+  font-family: 'Bebas Neue', sans-serif; /* keeps your header font */
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
 }
 
 header h1 {
