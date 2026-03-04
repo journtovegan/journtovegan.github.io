@@ -9,16 +9,51 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@400;500&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1><span class="journey">Journey</span> <span class="vegan">to Vegan</span></h1>
-    <nav>
-      <button onclick="window.location.href='index.html'">Home</button>
-      <button onclick="window.location.href='why-vegan.html'">Why Vegan?</button>
-      <button onclick="window.location.href='swaps.html'">Sustainable Swaps</button>
-      <button onclick="window.location.href='gear.html'">Gear Guides</button>
-      <button onclick="window.location.href='contact.html'">Contact</button>
+  <header class="site-header">
+  <div class="header-container">
+
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="logo.png" alt="Journey to Vegan Logo">
+      </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-menu">
+
+      <div class="dropdown">
+        <button class="nav-button">Home</button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="nav-button">Sustainable Swaps</button>
+        <div class="dropdown-content">
+          <a href="swaps.html">Sustainable Swaps</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="nav-button">Gear Guides</button>
+        <div class="dropdown-content">
+          <a href="gear.html">Gear Guides</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="nav-button">Contact</button>
+        <div class="dropdown-content">
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
     </nav>
-  </header>
+
+  </div>
+</header>
 
   <section class="intro">
     <h2>Why Choose Vegan?</h2>
