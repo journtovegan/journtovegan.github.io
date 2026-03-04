@@ -395,20 +395,6 @@ Gear Hero Section
 ========================= */
 
 .gear-hero {
-  height: 50vh;
+  height: 45vh;
   background: url('bluetopo.png') center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-}
-
-.hero-text h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.hero-text p {
-  font-size: 1.2rem;
 }
