@@ -382,18 +382,27 @@ a:hover {
     height: 150px;         /* keeps circle */
     flex-shrink: 0;
   }
-}
+/* =========================
+   Sustainable Swaps Page
+========================= */
+
 .swaps-intro {
   text-align: center;
   padding: 120px 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .swaps-intro h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 35px;           /* matches .intro h2 */
+  color: #5A8A42;            /* same green as other main headings */
+  margin-bottom: 25px;
 }
 
 .swaps-intro h3 {
+  font-size: 18px;           /* matches your paragraph sizing */
   font-weight: 400;
+  color: #555555;            /* matches body paragraph color */
   line-height: 1.6;
 }
