@@ -382,9 +382,7 @@ a:hover {
     height: 150px;         /* keeps circle */
     flex-shrink: 0;
   }
-/* =========================
-   Sustainable Swaps Page
-========================= */
+}
 
 .swaps-intro {
   text-align: center;
