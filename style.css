@@ -389,17 +389,16 @@ transition: all 0.3s ease;
 background: #ff7f50;
 transform: translateY(-2px);
 }
-
 /* =========================
-Gear Hero Section
+Gear Hero Section (Full Page)
 ========================= */
 .gear-hero {
   position: relative;
-  height: 40vh; /* Adjust based on your needs */
+  height: 100vh; /* Full viewport height */
   background: url('bluetopo.png') center/cover no-repeat;
   z-index: 1;
-  margin: 0; /* Remove any default margin */
-  padding: 0; /* Remove any default padding */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
 /* =========================
@@ -407,9 +406,9 @@ Intro Section (Text over Image)
 ========================= */
 .intro {
   position: absolute;
-  top: 30%; /* Adjust depending on where you want the text */
+  top: 50%; /* Center vertically */
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
   text-align: center;
   font-size: 24px;
   max-width: 80%;
@@ -433,12 +432,12 @@ Responsive Mobile Styles
 ========================= */
 @media (max-width: 768px) {
   .gear-hero {
-    height: 40vh; /* Adjust for mobile view */
+    height: 100vh; /* Ensure full height on mobile */
   }
 
   .intro {
-    top: 25%; /* Adjust for mobile view */
-    font-size: 18px; /* Make text smaller on mobile */
+    top: 40%; /* Adjust for mobile */
+    font-size: 18px;
   }
 
   .intro h2 {
