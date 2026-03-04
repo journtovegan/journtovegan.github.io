@@ -359,3 +359,9 @@ transition: all 0.3s ease;
 background: #ff7f50;
 transform: translateY(-2px);
 }
+.footer-logo img {
+  height: 45px;           /* keeps the current size */
+  display: block;
+  border: 1px solid black; /* thinnest black frame */
+  border-radius: 4px;      /* optional, slightly rounded corners */
+}
