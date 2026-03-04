@@ -390,11 +390,35 @@ background: #ff7f50;
 transform: translateY(-2px);
 }
 
- /* =========================
+/* =========================
 Gear Hero Section
 ========================= */
-
 .gear-hero {
-  height: 45vh;
+  position: relative;
+  height: 40vh;  /* Adjust the height to your preference */
   background: url('bluetopo.png') center/cover no-repeat;
+}
+
+/* Text position over the hero image */
+.intro {
+  position: absolute;
+  top: 30%; /* Adjust based on how far down you want the text */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  max-width: 80%;
+  z-index: 10; /* Ensure it's above the hero image */
+}
+
+.intro h2 {
+  font-size: 36px; /* Adjust size as necessary */
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #fff; /* Ensure the text is visible on top of the image */
 }
