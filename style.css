@@ -277,33 +277,67 @@ font-weight: bold;
 /* =========================
 Footer
 ========================= */
+/* =========================
+   Footer
+========================= */
 .site-footer {
-background: #3a3a3a;
-color: white;
-padding: 40px 20px;
-box-shadow: 0 -4px 12px rgba(0,0,0,0.2);
+  background: #3a3a3a; /* slightly lighter dark gray */
+  color: white;
+  padding: 20px 40px;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.2); /* shadow above footer */
 }
 
 .footer-container {
   max-width: 1200px;
-  margin: auto;
-  position: relative;
-  text-align: center;
-  overflow: hidden;
+  margin: 0 auto;
 }
 
-.footer-text {
-font-size: 16px;
+.footer-container .footer-logo,
+.footer-container .footer-text {
+  display: inline-block; /* allows them to sit on the same line */
+  vertical-align: middle;
+}
+
+.footer-container {
+  text-align: center; /* center the whole block */
 }
 
 .footer-logo img {
-height: 45px;
-opacity: 0.9;
-transition: opacity 0.3s ease;
+  height: 45px;
+  display: inline-block;
+  border: 1px solid black; /* thin black frame */
+  border-radius: 4px;      /* subtle rounded corners */
+  margin-right: 15px;       /* small gap between logo and text */
+  opacity: 1;               /* make it fully visible */
+  transition: opacity 0.3s ease;
 }
 
 .footer-logo img:hover {
-opacity: 1;
+  opacity: 1; /* keep hover effect if you like */
+}
+
+.footer-text p {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  color: white;
+}
+
+/* Responsive: wrap logo/text on small screens */
+@media (max-width: 768px) {
+  .footer-container {
+    text-align: center;
+  }
+
+  .footer-container .footer-logo,
+  .footer-container .footer-text {
+    display: block;
+    margin: 5px auto;
+  }
+
+  .footer-logo img {
+    margin-right: 0;
+  }
 }
 
 /* =========================
@@ -337,12 +371,6 @@ right: 0;
 width: 100%;
 }
 
-.footer-container {
-flex-direction: column;
-gap: 20px;
-text-align: center;
-}
-}
 
 /* =========================
 Contact Button Styling
@@ -358,10 +386,4 @@ transition: all 0.3s ease;
 .contact-btn:hover {
 background: #ff7f50;
 transform: translateY(-2px);
-}
-.footer-logo img {
-  height: 45px;           /* keeps the current size */
-  display: block;
-  border: 1px solid black; /* thinnest black frame */
-  border-radius: 4px;      /* optional, slightly rounded corners */
 }
