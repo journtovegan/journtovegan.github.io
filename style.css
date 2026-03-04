@@ -395,30 +395,57 @@ Gear Hero Section
 ========================= */
 .gear-hero {
   position: relative;
-  height: 40vh;  /* Adjust the height to your preference */
+  height: 40vh; /* Adjust based on your needs */
   background: url('bluetopo.png') center/cover no-repeat;
+  z-index: 1;
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
 }
 
-/* Text position over the hero image */
+/* =========================
+Intro Section (Text over Image)
+========================= */
 .intro {
   position: absolute;
-  top: 30%; /* Adjust based on how far down you want the text */
+  top: 30%; /* Adjust depending on where you want the text */
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  color: white;
   font-size: 24px;
   max-width: 80%;
-  z-index: 10; /* Ensure it's above the hero image */
+  z-index: 2; /* Ensure text appears above image */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
 }
 
 .intro h2 {
-  font-size: 36px; /* Adjust size as necessary */
+  font-size: 36px;
   margin-bottom: 10px;
 }
 
 .intro p {
   font-size: 18px;
   line-height: 1.6;
-  color: #fff; /* Ensure the text is visible on top of the image */
+}
+
+/* =========================
+Responsive Mobile Styles
+========================= */
+@media (max-width: 768px) {
+  .gear-hero {
+    height: 40vh; /* Adjust for mobile view */
+  }
+
+  .intro {
+    top: 25%; /* Adjust for mobile view */
+    font-size: 18px; /* Make text smaller on mobile */
+  }
+
+  .intro h2 {
+    font-size: 28px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
 }
