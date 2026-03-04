@@ -339,7 +339,9 @@ Footer
     margin-right: 0;
   }
 }
-
+.footer-text p {
+  color: #e6e6e6 !important; /* soft off-white/gray */
+}
 /* =========================
 Responsive
 ========================= */
