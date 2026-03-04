@@ -3,38 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Journey to Vegan</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@400;500&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <title>Journey to Vegan - Hyper Modern</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-modern.css">
 </head>
 <body>
-  <header>
-    <h1><span class="journey">Journey</span> <span class="vegan">to Vegan</span></h1>
-    <nav>
-    <button onclick="window.location.href='index.html'">Home</button>
-    <button onclick="window.location.href='why-vegan.html'">Why Vegan?</button>
-    <button onclick="window.location.href='swaps.html'">Sustainable Swaps</button>
-    <button onclick="window.location.href='gear.html'">Gear Guides</button>  
-    <button onclick="window.location.href='contact.html'">Contact</button>
-  </nav>
+
+  <!-- ======= Hero Section ======= -->
+  <header class="hero">
+    <div class="overlay">
+      <h1><span class="journey">Journey</span> <span class="vegan">to Vegan</span></h1>
+      <p class="hero-sub">new text here</p>
+      <div class="hero-buttons">
+        <button onclick="document.getElementById('intro').scrollIntoView({behavior:'smooth'})">new text here</button>
+        <button onclick="document.getElementById('gear').scrollIntoView({behavior:'smooth'})">new text here</button>
+      </div>
+    </div>
   </header>
 
-  <section class="intro">
-    <h2>Your Choices Matter 🌱</h2>
-    <p>Empowering your journey to a healthier and more sustainable plant-based lifestyle.</p>
+  <!-- ======= Navigation (Sticky) ======= -->
+  <nav class="sticky-nav">
+    <div class="nav-container">
+      <div class="nav-logo">Journey to Vegan</div>
+      <div class="nav-menu">
+        <div class="dropdown">
+          <button class="nav-button">new text here</button>
+          <div class="dropdown-content">
+            <a href="#intro">Home</a>
+            <a href="#bio">About Me</a>
+            <a href="#swaps">Sustainable Swaps</a>
+            <a href="#gear">Gear Guides</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======= Intro Section ======= -->
+  <section id="intro" class="section intro">
+    <div class="section-content">
+      <h2>Your Choices Matter 🌱</h2>
+      <p>Empowering your journey to a healthier and more sustainable plant-based lifestyle.</p>
+    </div>
   </section>
 
-  <section class="bio">
-    <h2>About Me 🌱</h2>
-    
-    <div class="bio-content">
-    <img src="me.jpeg" alt="Photo of Kylie" class="profile-pic">
-      
-    <p>Hi, I'm Kylie, and my vegan journey began five years ago. I've always loved nature and outdoor adventure, but for a long time, I didn't understand how my choices impacted the world around me. I created this space to share info and low-fuss, positive-impact alternatives with others.</p>
+  <!-- ======= Bio Section ======= -->
+  <section id="bio" class="section bio">
+    <div class="section-content bio-content">
+      <img src="me.jpeg" alt="Photo of Kylie" class="profile-pic">
+      <div>
+        <h2>About Me 🌱</h2>
+        <p>Hi, I'm Kylie, and my vegan journey began five years ago. I've always loved nature and outdoor adventure, but for a long time, I didn't understand how my choices impacted the world around me. I created this space to share info and low-fuss, positive-impact alternatives with others.</p>
+      </div>
+    </div>
   </section>
 
+  <!-- ======= Swaps Section ======= -->
+  <section id="swaps" class="section swaps">
+    <h2>new text here</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="new_image.jpg" alt="new text here">
+        <h3>new text here</h3>
+        <p>new text here</p>
+      </div>
+      <div class="card">
+        <img src="new_image.jpg" alt="new text here">
+        <h3>new text here</h3>
+        <p>new text here</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Gear Section ======= -->
+  <section id="gear" class="section gear">
+    <h2>new text here</h2>
+    <div class="gear-list">
+      <div class="gear-row">
+        <img src="new_image.jpg" alt="new text here">
+        <div class="gear-info">
+          <h3>new text here</h3>
+          <p>new text here</p>
+          <button>new text here</button>
+        </div>
+      </div>
+      <div class="gear-row">
+        <img src="new_image.jpg" alt="new text here">
+        <div class="gear-info">
+          <h3>new text here</h3>
+          <p>new text here</p>
+          <button>new text here</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="section contact">
+    <h2>new text here</h2>
+    <form class="contact-form">
+      <label>new text here</label>
+      <input type="text" placeholder="new text here">
+      <label>new text here</label>
+      <input type="email" placeholder="new text here">
+      <label>new text here</label>
+      <textarea rows="5" placeholder="new text here"></textarea>
+      <button type="submit">new text here</button>
+    </form>
+  </section>
+
+  <!-- ======= Footer ======= -->
   <footer>
     <p>Follow me on Instagram: <strong>@Journeyto.Vegan</strong> | Email: <strong>journto.vegan@gmail.com</strong></p>
   </footer>
+
 </body>
 </html>
