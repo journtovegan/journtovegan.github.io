@@ -14,69 +14,25 @@ a { text-decoration: none; color: inherit; }
 /* =========================
    Header
 ========================= */
-.site-header {
-  width: 100%;
-  background: black;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.header-container {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-}
-
-.logo img { height: 50px; }
-
-.nav-menu { display: flex; gap: 15px; }
 
 .nav-button {
-  background: none;
-  border: none;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  padding: 8px 12px;
-  border-radius: 8px;
-  transition: 0.3s;
+  position: relative;
 }
 
-.nav-button:hover { background: rgba(0,128,128,0.1); }
-
-.dropdown { position: relative; }
-
-.dropdown-content {
-  display: none;
+.nav-button::after {
+  content: "";
   position: absolute;
-  top: 36px;
-  right: 0;
-  background: white;
-  min-width: 180px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  overflow: hidden;
-  z-index: 200;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #ff7f50; /* orange accent */
+  transition: width 0.3s ease;
 }
 
-.dropdown-content a {
-  display: block;
-  padding: 10px 15px;
-  color: #333;
-  transition: 0.3s;
+.nav-button:hover::after {
+  width: 100%;
 }
-
-.dropdown-content a:hover {
-  background: #00a99d; /* teal accent */
-  color: white;
-}
-
-.dropdown:hover .dropdown-content { display: block; }
 
 /* =========================
    Hero Section
