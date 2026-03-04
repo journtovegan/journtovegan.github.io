@@ -278,10 +278,9 @@ font-weight: bold;
 Footer
 ========================= */
 .site-footer {
-background: #444;
+background: #3a3a3a;
 color: white;
 padding: 40px 20px;
-border-top: 4px solid #00a99d;
 }
 
 .footer-container {
