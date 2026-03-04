@@ -3,54 +3,324 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Journey to Vegan - Hyper Modern</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style-modern.css">
+  <title>Journey to Vegan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@400;500&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* =========================
+       Base Styles
+    ========================= */
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #f5f5eb;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* =========================
+       Hero Section
+    ========================= */
+    header.hero {
+      position: relative;
+      height: 100vh;
+      background: url('https://via.placeholder.com/1600x900') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    header.hero .overlay {
+      background: rgba(0,0,0,0.4);
+      padding: 40px 20px;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 64px;
+      margin: 0;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    header p.hero-sub {
+      font-size: 20px;
+      margin: 20px 0;
+      opacity: 0.9;
+    }
+
+    .hero-buttons button {
+      padding: 12px 28px;
+      margin: 10px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      background: rgba(255,255,255,0.1);
+      color: #00a86b;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .hero-buttons button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 20px rgba(0,168,107,0.6);
+    }
+
+    /* =========================
+       Navigation
+    ========================= */
+    nav.sticky-nav {
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(8px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      z-index: 100;
+    }
+
+    .nav-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 20px;
+      color: #00a86b;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-button {
+      margin-left: 15px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .nav-button:hover { background: rgba(0,168,107,0.1); }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 36px;
+      background: white;
+      border-radius: 8px;
+      min-width: 150px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      overflow: hidden;
+      z-index: 100;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px 15px;
+      color: #333;
+      transition: 0.3s;
+    }
+
+    .dropdown-content a:hover {
+      background: #00a86b;
+      color: white;
+    }
+
+    .dropdown:hover .dropdown-content { display: block; }
+
+    /* =========================
+       Sections
+    ========================= */
+    section {
+      padding: 100px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 { font-family: 'Bebas Neue', sans-serif; font-size: 36px; margin-bottom: 20px; color: #2e8b57; }
+
+    p { font-size: 18px; line-height: 1.6; color: #555; }
+
+    /* =========================
+       Bio Section
+    ========================= */
+    .bio-content {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .profile-pic {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #2e8b57;
+    }
+
+    /* =========================
+       Cards Section
+    ========================= */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,168,107,0.4); }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 { margin: 16px; color: #2e8b57; }
+    .card p { margin: 0 16px 16px 16px; color: #555; }
+
+    /* =========================
+       Gear Section
+    ========================= */
+    .gear-list { display: flex; flex-direction: column; gap: 50px; }
+
+    .gear-row {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      align-items: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      border-radius: 20px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: white;
+    }
+
+    .gear-row:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,168,107,0.4); }
+
+    .gear-row img { width: 300px; border-radius: 20px; object-fit: cover; }
+
+    .gear-info button {
+      margin-top: 12px;
+      padding: 10px 20px;
+      background: #2e8b57;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .gear-info button:hover { background: #1b5f3b; }
+
+    /* =========================
+       Contact Section
+    ========================= */
+    .contact-form {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .contact-form button {
+      padding: 12px 25px;
+      background: #2e8b57;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .contact-form button:hover { background: #1b5f3b; }
+
+    /* =========================
+       Footer
+    ========================= */
+    footer { text-align: center; padding: 40px 20px; background: #4f6a3f; color: white; }
+
+    /* =========================
+       Responsive
+    ========================= */
+    @media(max-width: 768px) {
+      .bio-content, .gear-row { flex-direction: column; text-align: center; }
+      .profile-pic, .gear-row img { width: 80%; height: auto; }
+      header h1 { font-size: 48px; }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- ======= Hero Section ======= -->
+  <!-- Hero -->
   <header class="hero">
     <div class="overlay">
       <h1><span class="journey">Journey</span> <span class="vegan">to Vegan</span></h1>
       <p class="hero-sub">new text here</p>
       <div class="hero-buttons">
-        <button onclick="document.getElementById('intro').scrollIntoView({behavior:'smooth'})">new text here</button>
-        <button onclick="document.getElementById('gear').scrollIntoView({behavior:'smooth'})">new text here</button>
+        <button>new text here</button>
+        <button>new text here</button>
       </div>
     </div>
   </header>
 
-  <!-- ======= Navigation (Sticky) ======= -->
+  <!-- Navigation -->
   <nav class="sticky-nav">
-    <div class="nav-container">
-      <div class="nav-logo">Journey to Vegan</div>
-      <div class="nav-menu">
-        <div class="dropdown">
-          <button class="nav-button">new text here</button>
-          <div class="dropdown-content">
-            <a href="#intro">Home</a>
-            <a href="#bio">About Me</a>
-            <a href="#swaps">Sustainable Swaps</a>
-            <a href="#gear">Gear Guides</a>
-            <a href="#contact">Contact</a>
-          </div>
+    <div class="nav-logo">Journey to Vegan</div>
+    <div class="nav-menu">
+      <div class="dropdown">
+        <button class="nav-button">Menu</button>
+        <div class="dropdown-content">
+          <a href="#intro">Home</a>
+          <a href="#bio">About Me</a>
+          <a href="#swaps">Sustainable Swaps</a>
+          <a href="#gear">Gear Guides</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- ======= Intro Section ======= -->
-  <section id="intro" class="section intro">
-    <div class="section-content">
-      <h2>Your Choices Matter 🌱</h2>
-      <p>Empowering your journey to a healthier and more sustainable plant-based lifestyle.</p>
-    </div>
+  <!-- Intro -->
+  <section id="intro">
+    <h2>Your Choices Matter 🌱</h2>
+    <p>Empowering your journey to a healthier and more sustainable plant-based lifestyle.</p>
   </section>
 
-  <!-- ======= Bio Section ======= -->
-  <section id="bio" class="section bio">
-    <div class="section-content bio-content">
+  <!-- Bio -->
+  <section id="bio">
+    <div class="bio-content">
       <img src="me.jpeg" alt="Photo of Kylie" class="profile-pic">
       <div>
         <h2>About Me 🌱</h2>
@@ -59,29 +329,29 @@
     </div>
   </section>
 
-  <!-- ======= Swaps Section ======= -->
-  <section id="swaps" class="section swaps">
+  <!-- Swaps -->
+  <section id="swaps">
     <h2>new text here</h2>
     <div class="cards">
       <div class="card">
-        <img src="new_image.jpg" alt="new text here">
+        <img src="https://via.placeholder.com/300x200" alt="new text here">
         <h3>new text here</h3>
         <p>new text here</p>
       </div>
       <div class="card">
-        <img src="new_image.jpg" alt="new text here">
+        <img src="https://via.placeholder.com/300x200" alt="new text here">
         <h3>new text here</h3>
         <p>new text here</p>
       </div>
     </div>
   </section>
 
-  <!-- ======= Gear Section ======= -->
-  <section id="gear" class="section gear">
+  <!-- Gear -->
+  <section id="gear">
     <h2>new text here</h2>
     <div class="gear-list">
       <div class="gear-row">
-        <img src="new_image.jpg" alt="new text here">
+        <img src="https://via.placeholder.com/300x200" alt="new text here">
         <div class="gear-info">
           <h3>new text here</h3>
           <p>new text here</p>
@@ -89,7 +359,7 @@
         </div>
       </div>
       <div class="gear-row">
-        <img src="new_image.jpg" alt="new text here">
+        <img src="https://via.placeholder.com/300x200" alt="new text here">
         <div class="gear-info">
           <h3>new text here</h3>
           <p>new text here</p>
@@ -99,8 +369,8 @@
     </div>
   </section>
 
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="section contact">
+  <!-- Contact -->
+  <section id="contact">
     <h2>new text here</h2>
     <form class="contact-form">
       <label>new text here</label>
@@ -113,7 +383,7 @@
     </form>
   </section>
 
-  <!-- ======= Footer ======= -->
+  <!-- Footer -->
   <footer>
     <p>Follow me on Instagram: <strong>@Journeyto.Vegan</strong> | Email: <strong>journto.vegan@gmail.com</strong></p>
   </footer>
