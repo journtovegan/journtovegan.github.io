@@ -282,7 +282,7 @@ Footer
 ========================= */
 .site-footer {
   background: #3a3a3a; /* slightly lighter dark gray */
-  color: white;
+  color: f5f5f5;
   padding: 20px 40px;
   box-shadow: 0 -4px 12px rgba(0,0,0,0.2); /* shadow above footer */
 }
