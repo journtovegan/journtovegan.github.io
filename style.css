@@ -4,327 +4,238 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #121212; /* dark modern background */
-  color: #FFFFFF;
+  background: #ffffff;
+  color: #333333;
   scroll-behavior: smooth;
 }
 
-.section {
-  padding: 120px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+a { text-decoration: none; color: inherit; }
+
+/* =========================
+   Header
+========================= */
+.site-header {
+  width: 100%;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo img { height: 50px; }
+
+.nav-menu { display: flex; gap: 15px; }
+
+.nav-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.nav-button:hover { background: rgba(0,128,128,0.1); }
+
+.dropdown { position: relative; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 36px;
+  right: 0;
+  background: white;
+  min-width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  overflow: hidden;
+  z-index: 200;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+  background: #00a99d; /* teal accent */
+  color: white;
+}
+
+.dropdown:hover .dropdown-content { display: block; }
 
 /* =========================
    Hero Section
 ========================= */
 .hero {
   position: relative;
-  width: 100%;
-  height: 100vh;
-  background: url('back.jpg') center/cover no-repeat;
+  height: 90vh;
+  background: url('https://via.placeholder.com/1600x900') center/cover no-repeat;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .hero .overlay {
   background: rgba(0,0,0,0.4);
-  backdrop-filter: blur(4px);
-  text-align: center;
   padding: 40px 20px;
   border-radius: 20px;
+  text-align: center;
 }
 
 .hero h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 70px;
-  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  font-size: 64px;
   margin: 0;
-  color: #00FFA3; /* neon accent */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
 
-.hero p.hero-sub {
-  font-size: 22px;
-  margin-top: 20px;
-  color: #FFFFFF;
-  opacity: 0.9;
-}
+.hero p { font-size: 20px; margin: 20px 0; opacity: 0.9; }
 
 .hero-buttons button {
-  margin: 20px 10px;
-  padding: 14px 28px;
-  font-size: 16px;
+  padding: 12px 28px;
+  margin: 10px;
   border-radius: 12px;
   border: none;
   cursor: pointer;
-  background: rgba(255,255,255,0.05);
-  color: #00FFA3;
-  backdrop-filter: blur(8px);
+  background: #00a99d; /* teal accent */
+  color: white;
+  font-weight: bold;
   transition: all 0.3s ease;
 }
 
-.hero-buttons button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 20px rgba(0,255,163,0.6);
-}
+.hero-buttons button:hover { background: #ff7f50; } /* orange accent */
 
 /* =========================
-   Sticky Nav + Dropdown
+   Sections
 ========================= */
-.sticky-nav {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background: rgba(18,18,18,0.85);
-  backdrop-filter: blur(8px);
-  z-index: 100;
-  padding: 10px 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
+section { padding: 100px 20px; max-width: 1200px; margin: auto; }
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+h2 { font-family: 'Raleway', sans-serif; font-size: 36px; margin-bottom: 20px; color: #333; }
 
-.nav-logo {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  color: #00FFA3;
-  font-size: 18px;
-}
-
-.nav-button {
-  background: none;
-  border: none;
-  color: #FFFFFF;
-  font-size: 16px;
-  cursor: pointer;
-  padding: 12px 18px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-}
-
-.nav-button:hover {
-  background: rgba(0,255,163,0.2);
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 50px;
-  background: rgba(0,0,0,0.85);
-  backdrop-filter: blur(12px);
-  border-radius: 12px;
-  padding: 10px 0;
-  min-width: 180px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-}
-
-.dropdown-content a {
-  display: block;
-  color: #FFFFFF;
-  padding: 12px 20px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background 0.3s, color 0.3s;
-}
-
-.dropdown-content a:hover {
-  color: #00FFA3;
-  background: rgba(255,255,255,0.05);
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* =========================
-   Sections & Cards
-========================= */
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  margin-top: 40px;
-}
-
-.card {
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(8px);
-  border-radius: 20px;
-  width: 300px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-}
-
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.card img:hover {
-  transform: scale(1.05);
-}
-
-.card h3 {
-  margin: 16px 0 8px 0;
-  color: #00FFA3;
-  font-family: 'Poppins', sans-serif;
-}
-
-.card p {
-  padding: 0 16px 16px 16px;
-  color: #FFFFFF;
-  opacity: 0.9;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0,255,163,0.4);
-}
+p { font-size: 18px; line-height: 1.6; color: #555; }
 
 /* =========================
    Bio Section
 ========================= */
-.bio-content {
-  display: flex;
-  gap: 40px;
-  max-width: 1000px;
-  flex-wrap: wrap;
-  align-items: center;
+.bio-content { display: flex; gap: 40px; align-items: center; flex-wrap: wrap; }
+
+.profile-pic { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; border: 4px solid #00a99d; }
+
+/* =========================
+   Cards Section
+========================= */
+.cards { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+
+.card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.profile-pic {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #00FFA3;
-  box-shadow: 0 6px 18px rgba(0,255,163,0.4);
-}
+.card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,169,157,0.4); }
+
+.card img { width: 100%; height: 200px; object-fit: cover; }
+
+.card h3 { margin: 16px; color: #00a99d; }
+
+.card p { margin: 0 16px 16px 16px; color: #555; }
 
 /* =========================
    Gear Section
 ========================= */
-.gear-list {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-}
+.gear-list { display: flex; flex-direction: column; gap: 50px; }
 
 .gear-row {
   display: flex;
-  gap: 40px;
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(8px);
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
   border-radius: 20px;
   padding: 20px;
-  align-items: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
 }
 
-.gear-row:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0,255,163,0.4);
-}
+.gear-row:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,169,157,0.4); }
 
-.gear-row img {
-  width: 300px;
-  border-radius: 20px;
-  object-fit: cover;
-}
+.gear-row img { width: 300px; border-radius: 20px; object-fit: cover; }
 
 .gear-info button {
   margin-top: 12px;
-  background: rgba(0,255,163,0.1);
+  padding: 10px 20px;
+  background: #00a99d;
+  color: white;
   border: none;
   border-radius: 12px;
-  color: #00FFA3;
-  padding: 10px 20px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
-.gear-info button:hover {
-  box-shadow: 0 0 20px rgba(0,255,163,0.6);
-  transform: translateY(-2px);
-}
+.gear-info button:hover { background: #ff7f50; }
 
 /* =========================
    Contact Section
 ========================= */
 .contact-form {
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(8px);
+  background: white;
   padding: 40px;
   border-radius: 20px;
   max-width: 600px;
+  margin: auto;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form input, .contact-form textarea {
   width: 100%;
   padding: 12px;
-  border-radius: 12px;
-  border: none;
   margin-bottom: 20px;
-  background: rgba(255,255,255,0.1);
-  color: #FFFFFF;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
 .contact-form button {
-  background: rgba(0,255,163,0.1);
-  border: none;
   padding: 12px 25px;
+  background: #00a99d;
+  color: white;
+  border: none;
   border-radius: 12px;
-  color: #00FFA3;
   cursor: pointer;
-  transition: all 0.3s ease;
+  font-weight: bold;
 }
 
-.contact-form button:hover {
-  box-shadow: 0 0 20px rgba(0,255,163,0.6);
-  transform: translateY(-2px);
-}
+.contact-form button:hover { background: #ff7f50; }
 
 /* =========================
    Footer
 ========================= */
-footer {
-  text-align: center;
-  padding: 40px 20px;
-  color: #FFFFFF;
-  background: #0D0D0D;
-}
+footer { text-align: center; padding: 40px 20px; background: #333; color: white; }
 
 /* =========================
    Responsive
 ========================= */
 @media(max-width: 768px) {
-  .bio-content, .gear-row {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .profile-pic, .gear-row img {
-    width: 80%;
-    height: auto;
-  }
-
-  .hero h1 {
-    font-size: 48px;
-  }
+  .bio-content, .gear-row { flex-direction: column; text-align: center; }
+  .profile-pic, .gear-row img { width: 80%; height: auto; }
+  .hero h1 { font-size: 48px; }
+  .nav-menu { flex-direction: column; gap: 10px; }
+  .dropdown-content { position: relative; top: 0; right: 0; width: 100%; }
 }
