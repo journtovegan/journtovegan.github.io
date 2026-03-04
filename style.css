@@ -281,6 +281,7 @@ Footer
 background: #3a3a3a;
 color: white;
 padding: 40px 20px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .footer-container {
