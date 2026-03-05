@@ -273,7 +273,7 @@ Mobile Responsive (specific to homepage gear)
 }
 
 /* =========================
-Old Gear Section (non-homepage)
+Gear Section
 ========================= */
 .gear-list {
   display: flex;
@@ -299,7 +299,7 @@ Old Gear Section (non-homepage)
 }
 
 .gear-row img {
-  width: 300px;                /* old, bigger image size */
+  width: 300px;
   border-radius: 20px;
   object-fit: cover;
 }
@@ -313,10 +313,6 @@ Old Gear Section (non-homepage)
   border-radius: 12px;
   cursor: pointer;
   transition: 0.3s;
-}
-
-.gear-info button:hover {
-  background: #ff7f50;
 }
 
 /* =========================
