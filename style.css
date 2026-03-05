@@ -413,5 +413,12 @@ Section Styles
     padding: 40px 20px;  /* Adjust padding for mobile */
   }
 }
+/* Forcing margin with !important */
+#intro {
+  margin-bottom: 10px !important; /* Forces the margin to be applied */
+}
 
+#swaps {
+  margin-top: 10px !important; /* Forces the margin to be applied */
+}
 
