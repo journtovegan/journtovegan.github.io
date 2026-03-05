@@ -271,6 +271,54 @@ Mobile Responsive (specific to homepage gear)
     text-align: center;
   }
 }
+
+/* =========================
+Old Gear Section (non-homepage)
+========================= */
+.gear-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.gear-row {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+}
+
+.gear-row:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,169,157,0.4);
+}
+
+.gear-row img {
+  width: 300px;                /* old, bigger image size */
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.gear-info button {
+  margin-top: 12px;
+  padding: 10px 20px;
+  background: #00a99d;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gear-info button:hover {
+  background: #ff7f50;
+}
+
 /* =========================
 Contact Section
 ========================= */
