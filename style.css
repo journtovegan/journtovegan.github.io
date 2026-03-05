@@ -2,11 +2,11 @@
 Base Styles
 ========================= */
 body {
-margin: 0;
-font-family: 'Inter', sans-serif;
-background: #ffffff;
-color: #333333;
-scroll-behavior: smooth;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  color: #333333;
+  scroll-behavior: smooth;
 }
 
 a { text-decoration: none; color: inherit; }
@@ -15,21 +15,21 @@ a { text-decoration: none; color: inherit; }
 Header
 ========================= */
 .site-header {
-width: 100%;
-background: white;
-box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-position: sticky;
-top: 0;
-z-index: 100;
+  width: 100%;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header-container {
-max-width: 1200px;
-margin: auto;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 15px 20px;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
 }
 
 .logo img { height: 50px; }
@@ -37,14 +37,14 @@ padding: 15px 20px;
 .nav-menu { display: flex; gap: 15px; }
 
 .nav-button {
-background: none;
-border: none;
-font-size: 16px;
-font-weight: 600;
-cursor: pointer;
-padding: 8px 12px;
-border-radius: 8px;
-transition: 0.3s;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
 }
 
 .nav-button:hover { background: rgba(0,128,128,0.1); }
@@ -52,28 +52,28 @@ transition: 0.3s;
 .dropdown { position: relative; }
 
 .dropdown-content {
-display: none;
-position: absolute;
-top: 36px;
-right: 0;
-background: white;
-min-width: 180px;
-border-radius: 8px;
-box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-overflow: hidden;
-z-index: 200;
+  display: none;
+  position: absolute;
+  top: 36px;
+  right: 0;
+  background: white;
+  min-width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  overflow: hidden;
+  z-index: 200;
 }
 
 .dropdown-content a {
-display: block;
-padding: 10px 15px;
-color: #333;
-transition: 0.3s;
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  transition: 0.3s;
 }
 
 .dropdown-content a:hover {
-background: #00a99d;
-color: white;
+  background: #00a99d;
+  color: white;
 }
 
 .dropdown:hover .dropdown-content { display: block; }
@@ -82,41 +82,41 @@ color: white;
 Hero Section
 ========================= */
 .hero {
-position: relative;
-height: 90vh;
-background: url('homepage.jpg') center/cover no-repeat;
-display: flex;
-justify-content: center;
-align-items: center;
-color: white;
+  position: relative;
+  height: 90vh;
+  background: url('homepage.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .hero .overlay {
-background: rgba(0,0,0,0.4);
-padding: 40px 20px;
-border-radius: 20px;
-text-align: center;
+  background: rgba(0,0,0,0.4);
+  padding: 40px 20px;
+  border-radius: 20px;
+  text-align: center;
 }
 
 .hero h1 {
-font-family: 'Raleway', sans-serif;
-font-size: 64px;
-margin: 0;
-text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  font-family: 'Raleway', sans-serif;
+  font-size: 64px;
+  margin: 0;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
 
 .hero p { font-size: 20px; margin: 20px 0; opacity: 0.9; }
 
 .hero-buttons button {
-padding: 12px 28px;
-margin: 10px;
-border-radius: 12px;
-border: none;
-cursor: pointer;
-background: #00a99d;
-color: white;
-font-weight: bold;
-transition: all 0.3s ease;
+  padding: 12px 28px;
+  margin: 10px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: #00a99d;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .hero-buttons button:hover { background: #ff7f50; }
@@ -124,281 +124,19 @@ transition: all 0.3s ease;
 /* =========================
 Sections
 ========================= */
-section { padding: 100px 20px; max-width: 1200px; margin: auto; }
+section { padding: 50px 20px; max-width: 1200px; margin: auto; }
 
 h2 {
-font-family: 'Raleway', sans-serif;
-font-size: 36px;
-margin-bottom: 20px;
-color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 p {
-font-size: 18px;
-line-height: 1.6;
-color: #555;
-}
-
-/* =========================
-Bio Section
-========================= */
-.bio-content {
-display: flex;
-gap: 40px;
-align-items: center;
-flex-wrap: wrap;
-}
-
-.profile-pic {
-width: 220px;
-height: 220px;
-border-radius: 50%;
-object-fit: cover;
-border: 4px solid #00a99d;
-}
-
-/* =========================
-Cards Section
-========================= */
-.cards {
-display: flex;
-flex-wrap: wrap;
-gap: 30px;
-justify-content: center;
-}
-
-.card {
-background: white;
-border-radius: 20px;
-overflow: hidden;
-width: 300px;
-box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-transform: translateY(-5px);
-box-shadow: 0 12px 24px rgba(0,169,157,0.4);
-}
-
-.card img {
-width: 100%;
-height: 200px;
-object-fit: cover;
-}
-
-.card h3 {
-margin: 16px;
-color: #00a99d;
-}
-
-.card p {
-margin: 0 16px 16px 16px;
-color: #555;
-}
-
-/* =========================
-Gear Section
-========================= */
-.gear-list {
-display: flex;
-flex-direction: column;
-gap: 50px;
-}
-
-.gear-row {
-display: flex;
-gap: 30px;
-flex-wrap: wrap;
-align-items: center;
-box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-border-radius: 20px;
-padding: 20px;
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-background: white;
-}
-
-.gear-row:hover {
-transform: translateY(-5px);
-box-shadow: 0 12px 24px rgba(0,169,157,0.4);
-}
-
-.gear-row img {
-width: 300px;
-border-radius: 20px;
-object-fit: cover;
-}
-
-.gear-info button {
-margin-top: 12px;
-padding: 10px 20px;
-background: #00a99d;
-color: white;
-border: none;
-border-radius: 12px;
-cursor: pointer;
-transition: 0.3s;
-}
-
-.gear-info button:hover { background: #ff7f50; }
-
-/* =========================
-Contact Section
-========================= */
-.contact-form {
-background: white;
-padding: 40px;
-border-radius: 20px;
-max-width: 600px;
-margin: auto;
-}
-
-.contact-form input,
-.contact-form textarea {
-width: 100%;
-padding: 12px;
-margin-bottom: 20px;
-border-radius: 8px;
-border: 1px solid #ccc;
-}
-
-.contact-form button {
-padding: 12px 25px;
-background: #00a99d;
-color: white;
-border: none;
-border-radius: 12px;
-cursor: pointer;
-font-weight: bold;
-}
-
-.contact-form button:hover { background: #ff7f50; }
-
-/* =========================
-Footer
-========================= */
-/* =========================
-   Footer
-========================= */
-.site-footer {
-  background: #3a3a3a; /* slightly lighter dark gray */
-  color: f5f5f5;
-  padding: 20px 40px;
-  box-shadow: 0 -4px 12px rgba(0,0,0,0.2); /* shadow above footer */
-}
-
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-container .footer-logo,
-.footer-container .footer-text {
-  display: inline-block; /* allows them to sit on the same line */
-  vertical-align: middle;
-}
-
-.footer-container {
-  text-align: center; /* center the whole block */
-}
-
-.footer-logo img {
-  height: 45px;
-  display: inline-block;
-  border: 1px solid black; /* thin black frame */
-  border-radius: 4px;      /* subtle rounded corners */
-  margin-right: 15px;       /* small gap between logo and text */
-  opacity: 1;               /* make it fully visible */
-  transition: opacity 0.3s ease;
-}
-
-.footer-logo img:hover {
-  opacity: 1; /* keep hover effect if you like */
-}
-
-.footer-text p {
-  display: inline-block;
-  font-size: 16px;
-  margin: 0;
-  color: e6e6e6;
-}
-
-/* Responsive: wrap logo/text on small screens */
-@media (max-width: 768px) {
-  .footer-container {
-    text-align: center;
-  }
-
-  .footer-container .footer-logo,
-  .footer-container .footer-text {
-    display: block;
-    margin: 5px auto;
-  }
-
-  .footer-logo img {
-    margin-right: 0;
-  }
-}
-.footer-text p {
-  color: #e6e6e6 !important; /* soft off-white/gray */
-}
-/* =========================
-Responsive
-========================= */
-@media(max-width: 768px) {
-
-.bio-content,
-.gear-row {
-flex-direction: column;
-text-align: center;
-}
-
-.profile-pic,
-.gear-row img {
-width: 80%;
-height: auto;
-}
-
-.hero h1 { font-size: 48px; }
-
-.nav-menu {
-flex-direction: column;
-gap: 10px;
-}
-
-.dropdown-content {
-position: relative;
-top: 0;
-right: 0;
-width: 100%;
-}
-
-
-/* =========================
-Contact Button Styling
-========================= */
-.contact-btn {
-background: #00a99d;
-color: white !important;
-padding: 8px 18px;
-border-radius: 20px;
-transition: all 0.3s ease;
-}
-
-.contact-btn:hover {
-background: #ff7f50;
-transform: translateY(-2px);
-}
-/* =========================
-Gear Hero Section (Full Page)
-========================= */
-.gear-hero {
-  position: relative;
-  height: 100vh; /* Full viewport height */
-  background: url('bluetopo.png') center/cover no-repeat;
-  z-index: 1;
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
 }
 
 /* =========================
@@ -406,15 +144,15 @@ Intro Section (Text over Image)
 ========================= */
 .intro {
   position: absolute;
-  top: 50%; /* Center vertically */
+  top: 30%; /* Bring the text closer to the image */
   left: 50%;
-  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+  transform: translate(-50%, -50%);
   text-align: center;
   font-size: 24px;
   max-width: 80%;
   z-index: 2; /* Ensure text appears above image */
-  margin: 0; /* Remove any default margin */
-  padding: 0; /* Remove any default padding */
+  margin: 0;
+  padding: 0;
 }
 
 .intro h2 {
@@ -428,15 +166,58 @@ Intro Section (Text over Image)
 }
 
 /* =========================
+Gear Section (Cards Section)
+========================= */
+.gear-list {
+  margin-top: -30px; /* Reduce space between intro and gear section */
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.gear-row {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+}
+
+.gear-row:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,169,157,0.4);
+}
+
+.gear-row img {
+  width: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.gear-info button {
+  margin-top: 12px;
+  padding: 10px 20px;
+  background: #00a99d;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gear-info button:hover { background: #ff7f50; }
+
+/* =========================
 Responsive Mobile Styles
 ========================= */
 @media (max-width: 768px) {
-  .gear-hero {
-    height: 100vh; /* Ensure full height on mobile */
-  }
-
   .intro {
-    top: 40%; /* Adjust for mobile */
+    top: 40%; /* Adjust for mobile to bring text closer */
     font-size: 18px;
   }
 
@@ -446,5 +227,9 @@ Responsive Mobile Styles
 
   .intro p {
     font-size: 16px;
+  }
+
+  .gear-list {
+    margin-top: -20px; /* Reduce the gap on mobile */
   }
 }
