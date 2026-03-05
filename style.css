@@ -391,15 +391,3 @@ transform: translateY(-2px);
 }
 
 
-  .intro p {
-    font-size: 16px;
-  }
-}
-/* Reduce padding specifically for intro and sustainable swaps */
-.intro {
-  padding: 50px 20px;  /* Adjust the values here */
-}
-
-.sustainable-swaps {
-  padding: 50px 20px;  /* Adjust as needed */
-}
