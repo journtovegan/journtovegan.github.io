@@ -207,7 +207,7 @@ Home Page Gear Section (specific to homepage)
 .home-page-gear .gear-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .home-page-gear .gear-row {
@@ -217,7 +217,7 @@ Home Page Gear Section (specific to homepage)
   align-items: flex-start;     /* aligns text to top of image */
   box-shadow: 0 6px 18px rgba(0,0,0,0.1);
   border-radius: 20px;
-  padding: 25px;
+  padding: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background: white;
 }
