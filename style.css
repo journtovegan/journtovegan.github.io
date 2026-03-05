@@ -207,7 +207,7 @@ Home Page Gear Section (specific to homepage)
 .home-page-gear .gear-list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 50px;
 }
 
 .home-page-gear .gear-row {
