@@ -124,7 +124,7 @@ transition: all 0.3s ease;
 /* =========================
 Sections
 ========================= */
-section { padding: 100px 20px; max-width: 1200px; margin: auto; }
+section { padding: 80px 20px; max-width: 1200px; margin: auto; }
 
 h2 {
 font-family: 'Raleway', sans-serif;
@@ -203,12 +203,12 @@ Gear Section
 .gear-list {
 display: flex;
 flex-direction: column;
-gap: 50px;
+gap: 30px;
 }
 
 .gear-row {
 display: flex;
-gap: 30px;
+gap: 20px;
 flex-wrap: wrap;
 align-items: center;
 box-shadow: 0 6px 18px rgba(0,0,0,0.1);
